@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .header{
+      min-height: 100vh;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+    position: relative;
+  }
+  
+  nav{
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+  }
+  nav img{
+      width: 100px;
+  }
+  .navigation{
+      flex: 1;
+    text-align: right;
+  }
+  .navigation ul li{
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+      color: #ffffff;
+  }
+  .navigation ul li a{
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 13px;
+  }
+  
+  .navigation ul li i{
+    text-align: right;
+  }
+  
+  .navigation ul li::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: #f35100f3;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+  }
+  .navigation ul li:hover::after{
+      width: 100%;
+  }
+
+.contact {
+  padding: 20px;
+}
+
+  .contact h1 {
+    text-align: center;
+    font-size:40px;
+    font-weight: 600;
+    color: white;
+  }
+
+  button{
+    width: 100%;
+    background-color: #e66419;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #f1510cde;
+  }
+
+  button a{
+    text-decoration: none;
+    color: white;
+  }
+  button:hover {
+    background-color: black;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #f1510cde;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+.contact h3{
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact p {
+  color: #ffffff;
+  font-size: 17px;
+}
+
+  .contact-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+  }
+
+  .contact-row {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    align-items: stretch;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal:target {
+    display: block;
+}
+
+.modal-content {
+    background-color: #000000;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #f35100f3;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #f35100f3;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img{
+  width: 150px;
+  height: auto;
+}
+
+  footer {
+    background-color: #bdbdbd;
+    margin-top: 0%;
+  }
+  .row.primary {
+    display: grid;
+    grid-template-columns: 3fr 2fr 4fr;
+    align-items: stretch;
+  }
+  .col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  .link h3 {
+    width: 100%;
+    text-align: left;
+    color: #000000;
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  .link ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .link li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  .link ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .link ul li a:hover {
+    color: #e95900;
+  }
+  .location p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+    color: #000000;
+  }
+
+  .location h3{
+    color: #000000;
+  }
+  
+  div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+  }
+  .social i {
+    color: #000000;
+  }
+  
+  .shop img{
+    width: 200px;
+    height: auto;
+  }
+
+  .shop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nshop {
+    margin-left: 50px;
+    padding-top: 50px;
+    text-align: right;
+  }
+
+  @media only screen and (max-width:800px) {
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    background-color: black;
+  }
+  
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  nav{
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+  }
+  nav img{
+      width: 100px;
+  }
+  .navigation{
+      flex: 1;
+    text-align: right;
+  }
+  .navigation ul li{
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+      color: #ffffff;
+  }
+  .navigation ul li a{
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 13px;
+  }
+  
+  .navigation ul li i{
+    text-align: right;
+  }
+  
+  .navigation ul li::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: #f35100f3;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+  }
+  .navigation ul li:hover::after{
+      width: 100%;
+  }
+
+  .menu {
+    color: white;
+  }
+  .category {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0 40px 0;
+  }
+
+  .container {
+    margin-bottom: 5%;
+  }
+  
+  .menu h1 {
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .menu h2 {
+    text-align: center;
+    margin-top: 5%;
+  }
+  
+  .restaurant-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .menu-item {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .menu-item img {
+    width: 100%;
+  }
+  
+  .order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  
+  .btn-menu {
+    padding: 6px 10px;
+    font-size: 14px;
+    text-align: center;
+    background: #f35100f3;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  
+  .title {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 8px 0;
+  }
+  
+  .description {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3%;
+  }
+
+  footer {
+    background-color: #bdbdbd;
+    margin-top: 0%;
+  }
+  .row.primary {
+    display: grid;
+    grid-template-columns: 3fr 2fr 4fr;
+    align-items: stretch;
+  }
+  .col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  .link h3 {
+    width: 100%;
+    text-align: left;
+    color: #000000;
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  .link ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .link li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  .link ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .link ul li a:hover {
+    color: #e95900;
+  }
+  .location p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+    color: #000000;
+  }
+
+  .location h3{
+    color: #000000;
+  }
+  
+  div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+  }
+  .social i {
+    color: #000000;
+  }
+  
+  .shop img{
+    width: 200px;
+    height: auto;
+  }
+
+  .shop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nshop {
+    margin-left: 50px;
+    padding-top: 50px;
+    text-align: right;
+  }
+
+  @media only screen and (max-width:800px) {
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
